@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
     startSpeechBtn.addEventListener("click", () => {
         const recognition = new webkitSpeechRecognition();
-        recognition.lang = selectInputLanguage.value; // Set recognition language based on selection
+        recognition.lang = selectInputLanguage.value; 
         recognition.interimResults = true;
 
         recognition.addEventListener('result', e => {
